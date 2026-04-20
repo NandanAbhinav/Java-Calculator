@@ -33,9 +33,10 @@ class Calculator
             result = no1*no2;
             break;
           case 4:
-             result = no1/no2;
+            result = no1/no2;
+            break; 
           case 5:
-             result = no1%no2;
+            result = no1%no2;
             break;
           default:
             System.out.println("Invalid choice");
