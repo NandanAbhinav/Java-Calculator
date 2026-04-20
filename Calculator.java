@@ -35,6 +35,11 @@ class Calculator
                 result = no1*no2;
                 break;
               case 4:
+                if(no2==0)
+                {
+                  System.out.println("Cannot devide by 0");
+                  continue;
+                }
                 result = no1/no2;
                 break; 
               case 5:
@@ -42,12 +47,12 @@ class Calculator
                 break;
               default:
                 System.out.println("Invalid choice");
-                break;
+                continue;
             }
           System.out.println("Result = "+result);
-          System.out.println("Press enter to exit");
-          char co=sc.next().charAt(0).;
-          if(co=" ")
+          System.out.println("Do you want to exit? (yes/no):");
+          String co=sc.next();
+          if(co.equalsIgnoreCase("yes"))
           {
             System.out.println("Exiting...");
             break;
