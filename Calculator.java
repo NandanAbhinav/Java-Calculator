@@ -42,5 +42,6 @@ class Calculator
             System.out.println("Invalid choice");
             break;
         }
+      System.out.println("Result = "+result);
     }
   }
