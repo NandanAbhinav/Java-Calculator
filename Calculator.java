@@ -9,18 +9,19 @@ class Calculator
         {
           System.out.println("\t===== Simple Calculator =====");
           System.out.println("");
-          System.out.println("Enter no. 1:");
-          double no1=sc.nextDouble();
-          System.out.println("Enter no. 2:");
-          double no2=sc.nextDouble();
-          System.out.println("");
           System.out.println("1. Addition [+]");
           System.out.println("2. Subtraction [-]");
           System.out.println("3. Multiplication [x]");
           System.out.println("4. Division [/]");
           System.out.println("5. Modulus [%]");
+          System.put.println("6. Exit");
           System.out.println("Enter your choice of operation:");
           int ch=sc.nextInt();
+          System.out.println("");
+         System.out.println("Enter no. 1:");
+          double no1=sc.nextDouble();
+          System.out.println("Enter no. 2:");
+          double no2=sc.nextDouble();
           System.out.println("");
           double result=0.0;
           switch(ch)
@@ -45,17 +46,14 @@ class Calculator
               case 5:
                 result = no1%no2;
                 break;
+              case 6:
+                System.out.println("Exiting...");
+                return;
               default:
                 System.out.println("Invalid choice");
                 continue;
             }
           System.out.println("Result = "+result);
-          System.out.println("Do you want to exit? (yes/no):");
-          String co=sc.next();
-          if(co.equalsIgnoreCase("yes"))
-          {
-            System.out.println("Exiting...");
-            break;
           }
         }
     }
